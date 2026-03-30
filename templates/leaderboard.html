@@ -1,0 +1,14 @@
+<h1>🔥 Skibidiboss X Lining Tiers</h1>
+
+<form method="POST" action="/join_queue">
+    <input name="name" placeholder="Enter IGN">
+    <button>Get Tested</button>
+</form>
+
+<h2>Leaderboard</h2>
+
+{% for p in players %}
+<div>{{p.name}} - {{p.tier}}</div>
+{% endfor %}
+
+<a href="/login">Tester Login</a>
