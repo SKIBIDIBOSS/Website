@@ -1,0 +1,12 @@
+<h2>Tester Panel</h2>
+
+<h3>Queue</h3>
+
+{% for q in queue %}
+<form method="POST">
+    {{q.name}}
+    <input type="hidden" name="name" value="{{q.name}}">
+    <input name="tier" placeholder="Assign Tier">
+    <button>Assign</button>
+</form>
+{% endfor %}
